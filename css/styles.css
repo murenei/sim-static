@@ -89,7 +89,7 @@ body {
   transition: 0.2s;
   border-radius: 2px;
   letter-spacing: 0.75px;
-  font-size: 13px;
+  font-size: 14px;
   position: relative;
   font-weight: 700;
   font-family: 'Roboto', helvetica, Arial, sans-serif;
@@ -105,12 +105,12 @@ body {
   margin-right: 5px;
 }
 .btn-xs {
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0;
 }
 .btn-sm {
   letter-spacing: 0;
-  font-size: 12px;
+  font-size: 15px;
 }
 .btn-lg {
   padding: 20px;
@@ -4951,7 +4951,7 @@ img.mfp-img {
 }
 .theme-hero-text-title {
   font-size: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-weight: 200;
   margin-top: 0;
   line-height: 1em;
@@ -4982,7 +4982,7 @@ img.mfp-img {
   }
 }
 .theme-hero-text-title-sm {
-  font-size: 30px;
+  font-size: 22px;
 }
 .theme-hero-text-mb {
   margin-bottom: 30px;
@@ -7267,7 +7267,7 @@ body {
   padding: 7px 0;
   border-radius: 2px;
   font-weight: 700;
-  font-size: 11px;
+  font-size: 12px;
   position: relative;
   z-index: 10;
 }
@@ -7792,9 +7792,9 @@ body {
 }
 .theme-search-results-item-flight-section-airline-title {
   font-family: helvetica, Arial, sans-serif;
-  font-size: 10px;
-  font-weight: 400;
-  opacity: 0.4;
+  font-size: 12px;
+  font-weight: 200;
+  opacity: 0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
   filter: alpha(opacity=40);
   margin-bottom: 0;
@@ -8379,7 +8379,7 @@ body {
   margin-bottom: 2px;
 }
 .theme-search-results-item-car-feature-list > li span {
-  font-size: 9px;
+  font-size: 10px;
   display: block;
 }
 .theme-search-results-item-car-location {
@@ -9814,7 +9814,7 @@ body {
   text-decoration: none;
 }
 .theme-account-nav-list > li > a {
-  font-size: 15px;
+  font-size: 18px;
   color: #7a7a7a;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -9968,7 +9968,7 @@ body {
   opacity: 0.5;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   filter: alpha(opacity=50);
-  font-size: 12px;
+  font-size: 14px;
 }
 .theme-account-history table > thead > tr > th,
 .theme-account-history table > tbody > tr > th,
@@ -9996,7 +9996,7 @@ body {
   margin-bottom: 0;
 }
 .theme-account-history-date {
-  font-size: 12px;
+  font-size: 14px;
 }
 .theme-account-history-tr-date {
   width: 30%;
@@ -10311,9 +10311,9 @@ body {
   margin-bottom: 0;
 }
 .theme-account-preferences-item {
-  padding: 20px;
+  padding: 15px;
   background: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   border-radius: 3px;
 }
 .theme-account-preferences-item-title {
@@ -10322,7 +10322,7 @@ body {
 }
 .theme-account-preferences-item-value {
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 16px;
   color: #727272;
 }
 .theme-account-preferences-item-change-link {
@@ -11107,7 +11107,7 @@ body {
   margin-bottom: 25px !important;
 }
 ._mb-30 {
-  margin-bottom: 30px !important;
+  margin-bottom: 10px !important;
 }
 ._mb-40 {
   margin-bottom: 40px !important;
