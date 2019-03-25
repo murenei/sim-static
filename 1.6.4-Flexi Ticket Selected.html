@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <title>1.6.1-Rich Content Comparison - Click to Compare</title>
+    <title>1.6.4-Flexi Ticket Selected</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"/>
@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="css/weather-icons.css"/>
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   <body>
 <!-- START NAVBAR  -->
@@ -1295,10 +1294,7 @@
                         </div>
                       </div>
                     </div>
-                    <br/>
-                    <a class="btn btn-primary-inverse btn-block theme-search-results-item-price-btn" href="1.4.1-Filter Results - Filtered Results.html">Filter Results</a>
                   </div>
-
                   <div class="theme-search-results-sidebar-section">
                     <h5 class="theme-search-results-sidebar-section-title">Price</h5>
                     <div class="theme-search-results-sidebar-section-price">
@@ -1593,7 +1589,7 @@
 
 
 <!-- START MAIN RESULTS SECTION  -->
-          <div class="col-md-9 " id="app">
+          <div class="col-md-9 ">
             <div class="theme-search-results-sort _mob-h clearfix">
               <h5 class="theme-search-results-sort-title">Sort by:</h5>
               <ul class="theme-search-results-sort-list">
@@ -1655,7 +1651,7 @@
 
 <!-- RESULTS ITEM 1 -->
               <div class="theme-search-results-item theme-search-results-item-">
-                <div class="theme-search-results-item-preview" v-on:click="one=!one" v-bind:class="{selected: one}">
+                <div class="theme-search-results-item-preview">
                   
                   <div class="row" data-gutter="20">
                     <div class="col-md-7 ">
@@ -1682,7 +1678,7 @@
                                   <div class="col-md-6 ">
                                     <div class="theme-search-results-item-flight-section-path">
                                       <div class="theme-search-results-item-flight-section-path-fly-time">
-                                        <p>8h 30m</p>
+                                        <p>7h 45m</p>
                                       </div>
                                       <div class="theme-search-results-item-flight-section-path-line"></div>
                                       <div class="theme-search-results-item-flight-section-path-line-start">
@@ -1949,7 +1945,7 @@
 
               <!-- START RESULTS - RESULT 2 -->
 <div class="theme-search-results-item theme-search-results-item-">
-  <div class="theme-search-results-item-preview" v-on:click="two=!two" v-bind:class="{selected: two}">
+  <div class="theme-search-results-item-preview">
     <div class="row" data-gutter="20">
       <div class="col-md-7 ">
         <div class="theme-search-results-item-flight-sections">
@@ -2248,7 +2244,7 @@
 
 <!-- START RESULT 3 -->
 <div class="theme-search-results-item theme-search-results-item- ">
-  <div class="theme-search-results-item-preview" v-on:click="three=!three" v-bind:class="{selected: three}">
+  <div class="theme-search-results-item-preview">
     <div class="row" data-gutter="20">
       <div class="col-md-7 ">
         <div class="theme-search-results-item-flight-sections">
@@ -2330,7 +2326,7 @@
               <span>Seat</span>
             </li>
             <li>
-              <i class="fa fa-wifi"></i>
+              <i onclick="window.location.href='1.6.5-Wifi selected.html';" class="fa fa-wifi"></i>
               <span>$20</span>
             </li>
             <li>
@@ -2352,7 +2348,7 @@
 </div>
 <div class="row" style="text-align: center; margin-top: 10px;">
 <div class="col-md-4">
-<p class="theme-search-results-item-price-sign" style="color: black;"><b>$620</b></p>
+<p class="theme-search-results-item-price-sign" style="color: black;"><b>$720</b></p>
 </div>
 <div class="col-md-4">
   <p class="theme-search-results-item-price-sign" style="color: black;"><b>$1,784</b></p>
@@ -2367,7 +2363,7 @@
       <div class="col-md-2 ">
         <div class="theme-search-results-item-book">
           <div class="theme-search-results-item-price">
-            <p class="theme-search-results-item-price-tag">$620+ pp</p>
+            <p class="theme-search-results-item-price-tag">$720+ pp</p>
             <p class="theme-search-results-item-price-sign">Economy</p>
           </div>
           <a class="btn btn-primary-inverse btn-block theme-search-results-item-price-btn" href="15-flight-payment-2.html">Book Now</a>
@@ -2389,8 +2385,8 @@
         <th></th>
 <th style="text-align: center;">Fare Conditions</th>
 <th style="text-align: center;">Lite</th>
-<th style="text-align: center;">Standard</th>
 <th style="text-align: center;">Flexi</th>
+<th style="text-align: center;">Maxi</th>
       </tr>
     </thead>
     <tbody>
@@ -2527,7 +2523,7 @@
 <p class="theme-account-history-type-title">$620.00</p>
   </td>
   <td class="theme-account-history-tr-date">
-<p class="theme-account-history-type-title">$740.00</p>
+<p class="theme-account-history-type-title">$720.00</p>
   </td>
   <td>
 <p class="theme-account-history-item-price">$820.00</p>
@@ -2906,8 +2902,7 @@
                 </div>
               </div>
             </div>
-            <a class="btn _tt-uc _fs-sm _mt-10 btn-white btn-block btn-lg" href="#">Load More Results</a>
-            <a href="1.6.2-Rich Content Comparison - Compare.html" class="btn btn-primary-inverse btn-block theme-search-results-item-price-btn">Compare Selected Offers</a>
+            <a class="btn _tt-uc _fs-sm _mt-10 btn-white btn-block btn-lg" href="1.5.1-Compare Bundled Offers.html">Load More Results</a>
           </div>
         </div>
       </div>
@@ -3062,28 +3057,6 @@
         </div>
       </div>
     </div>
-
-        <script>
-      var app = new Vue({
-          el: '#app',
-          data: {
-            message: 'Hello Vue!',
-            one: false,
-            two: false,
-            three: false,
-            price: 720
-          }
-        })
-    </script>
-    <style>
-    div.selected {
-      border-radius: 3px;
-      border-color: #0092D5;
-      border-width: 3px;
-      border-style: solid;
-    </style>
-
-
     <script src="js/jquery.js"></script>
     <script src="js/moment.js"></script>
     <script src="js/bootstrap.js"></script>
