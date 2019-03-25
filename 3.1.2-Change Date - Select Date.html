@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <title>Travel Mate - Account history</title>
+    <title>3.1.2-Change Date - Select Date</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"/>
@@ -1074,9 +1074,9 @@
           <div class="col-md-2-5 ">
             <div class="theme-account-sidebar">
               <div class="theme-account-avatar">
-                <img class="theme-account-avatar-img" src="./img/custom/myAvatar.png" alt="Image Alternative text" title="Image Title"/>
-                <p class="theme-account-avatar-name">Welcome,
-                  <br/>Juliette Abbot
+                <img class="theme-account-avatar-img" src="./img/custom/user-avatar.png"  alt="Image Alternative text" title="Image Title"/>
+                <p class="theme-account-avatar-name">Logged in as:
+                  <br/><i>Juliette Abbot</i>
                 </p>
               </div>
               <nav class="theme-account-nav">
@@ -1123,13 +1123,13 @@
           <div class="col-md-9-5 ">
             <!-- <h4 class="theme-account-page-title">Booking Manager - Order ID: 10988064PS</h4> -->
             <!-- <h3>Order Manager</h3> -->
-            <p class="pull-right">Order ID: 10988064PS  -- Total Price: $720.00</p>
+            <p class="pull-right">Order ID: 10988064PS  -- Total Price: $1,480.00</p>
             <!-- START ITINERARY -->
             <h4>Itinerary Details</h4>
             <div class="theme-search-results-item theme-search-results-item- active">
               <div class="theme-search-results-item-collapse collapse in" id="searchResultsItem-2" aria-expanded="true" style="">
                 <div class="theme-search-results-item-extend">
-                  <a class="theme-search-results-item-extend-close" href="3.3.2-Change Date - Select Date.html" onclick="alert('There is a fee of $70.00 to change this booking.')" role="button"><i class="fa fa-edit theme-account-history-type-icon"></i></a>
+                  <a class="theme-search-results-item-extend-close" href="#" role="button"><i class="fa fa-edit theme-account-history-type-icon"></i></a>
                   <div class="theme-search-results-item-extend-inner">
                     <div class="theme-search-results-item-flight-detail-items">
                       <div class="theme-search-results-item-flight-details">
@@ -1165,7 +1165,7 @@
                                       <p class="theme-search-results-item-flight-details-schedule-destination-title">
                                         <b>SIN </b>Terminal 1
                                       </p>
-                                      <p class="theme-search-results-item-flight-details-schedule-destination-city">Singapore, SN</p>
+                                      <p class="theme-search-results-item-flight-details-schedule-destination-city">Singapore, SG</p>
                                     </div>
                                     <div class="theme-search-results-item-flight-details-schedule-destination-separator">
                                       <span>→</span>
@@ -1178,9 +1178,9 @@
                                     </div>
                                   </div>
                                   <ul class="theme-search-results-item-flight-details-schedule-features">
-                                    <li>AO 4863 Air Oceania</li>
-                                    <li>Narrow-body jet</li>
-                                    <li>Boeing 737</li>
+                                    <li>AO 9817 Air Oceana</li>
+                                    <li>Wide-body jet</li>
+                                    <li>Boeing 777</li>
                                   </ul>
                                 </li>
                               </ul>
@@ -1195,37 +1195,75 @@
             </div>
             
 
-            <!-- START PASSENGERS -->
+            <!-- START SELECT DATE -->
+            <div class="theme-account-history" style="margin-top: 20px;">
+              <h4>Select Date</h4>
+              <div class="theme-search-area theme-search-area-stacked">
+                      <div class="theme-search-area-form">
+                        <div class="row" data-gutter="none">
+                          <!-- DATES -->
+                          <div class="col-md-4 ">
+                            <div class="row" data-gutter="none">
+                              <div class="col-md-6 ">
+                                <div class="theme-search-area-section theme-search-area-section-curved theme-search-area-section-bg-white theme-search-area-section-no-border theme-search-area-section-mr">
+                                  <div class="theme-search-area-section-inner">
+                                    <i class="theme-search-area-section-icon lin lin-calendar"></i>
+                                    <input class="theme-search-area-section-input datePickerStart _mob-h" value="4/1" type="text" placeholder="Check-in" style="">
+                                    <input class="theme-search-area-section-input _desk-h mobile-picker" value="2025-04-01" type="text">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6 ">
+                                <div class="theme-search-area-section theme-search-area-section-curved theme-search-area-section-bg-white theme-search-area-section-no-border theme-search-area-section-mr">
+                                  <div class="theme-search-area-section-inner">
+                                    <i class="theme-search-area-section-icon lin lin-calendar"></i>
+                                    <input disabled class="theme-search-area-section-input datePickerEnd _mob-h" value="" type="text" placeholder="No Return" style="">
+                                    <input disabled class="theme-search-area-section-input _desk-h mobile-picker" value="2018-07-02" type="text">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-1 ">
+                            <a href="3.1.3-Change Date - Search Results.html" class="theme-search-area-submit _mt-0 theme-search-area-submit-no-border theme-search-area-submit-curved">Search</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+
+
             <div class="theme-account-history" style="margin-top: 20px;">
               <h4>Passengers</h4>
               <table class="table">
                 <thead>
                   <tr>
-                    <th>Category</th>
-                    <th>Name</th>
-                    <th>Gender</th>
-                    <th>Date of Birth</th>
+                    <th>Airline</th>
+                    <th>Date</th>
+                    <th>Duration</th>
+                    <th>Stops</th>
                     <th>Services</th>
-                    <th>eTicket #</th>
-                    <th>Seat #</th>
-                    <th>Total Price</th>
-                    <th>Actions</th>
+                    <th>Price</th>
                     <th></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="theme-account-history-type">
-                      <p class="theme-account-history-type-title">Adult</p>
+                    <td>
+                      <img class="" height="40px" width="40px" src="./img/logos/oceanaair_logo.jpg" alt="Image Alternative text"
+                        title="Image Title" />
                     </td>
                     <td>
-                      <p class="theme-account-history-type-title">Juliette Abbot</p>
+                      <p class="theme-account-history-type-title">1:00 PM - 11:10 PM</p>
+                      <p class="theme-account-history-item-name">Air Oceana</p>
                     </td>
                     <td>
-                      <p class="theme-account-history-type-title">F</p>
+                      <p class="theme-account-history-type-title">10:10hrs</p>
+                      <p class="theme-account-history-item-name">SIN -> SYD</p>
                     </td>
-                    <td>
-                      <p class="theme-account-history-type-title">21-6-76</p>
+                    <td class="theme-account-history-type-title">
+                      <p class="theme-account-history-type-title">1 Stop</p>
+                      <p class="theme-account-history-item-name">2h 20m KUL</p>
                     </td>
                     <td>
                       <i class="fa fa-suitcase theme-account-history-type-icon"></i>
@@ -1235,246 +1273,49 @@
                       <!-- <i class="fa fa-wifi theme-account-history-type-icon"></i> -->
                     </td>
                     <td>
-                      <p class="theme-account-history-type-title">192373625</p>
+                      <p class="theme-account-history-item-price" style="color: green;">$0.00</p>
                     </td>
                     <td>
-                      <p class="theme-account-history-type-title">12 A</p>
-                    </td>
-                    <td>
-                      <p class="theme-account-history-type-title">$720.00</p>
-                    </td>
-                    <td>
-                      <i class="fa fa-edit theme-account-history-type-icon"></i>
-                      <i class="fa fa-times theme-account-history-type-icon" style="color: red;"></i>
-                    </td>
-                    <td>
-                      <button class='btn btn-primary btn-xs'>Check-in</button>
+                      <button class="btn btn-primary">Select</button>
                     </td>
                   </tr>
-                  <!-- <tr>
-                    <td class="theme-account-history-type">
-                      <p class="theme-account-history-type-title">Adult</p>
+                  <tr>
+                    <td>
+                      <img class="" height="40px" width="40px" src="./img/logos/oceanaair_logo.jpg" alt="Image Alternative text"
+                        title="Image Title" />
                     </td>
                     <td>
-                      <p class="theme-account-history-type-title">Maxwell Abbot</p>
+                      <p class="theme-account-history-type-title">8:30 PM - 10:10 AM<sup>+1</sup></p>
+                      <p class="theme-account-history-item-name">Air Oceana</p>
                     </td>
                     <td>
-                      <p class="theme-account-history-type-title">M</p>
+                      <p class="theme-account-history-type-title">12:20hrs</p>
+                      <p class="theme-account-history-item-name">SIN -> SYD</p>
                     </td>
-                    <td>
-                      <p class="theme-account-history-type-title">18-2-74</p>
+                    <td class="theme-account-history-type-title">
+                      <p class="theme-account-history-type-title">1 Stop</p>
+                      <p class="theme-account-history-item-name">4h MEL</p>
                     </td>
                     <td>
                       <i class="fa fa-suitcase theme-account-history-type-icon"></i>
                       <i class="fa fa-cutlery theme-account-history-type-icon"></i>
                       <i class="fa fa-coffee theme-account-history-type-icon"></i>
                       <i class="fa fa-search-plus theme-account-history-type-icon"></i>
-                      <i class="fa fa-wifi theme-account-history-type-icon"></i>
+                      <!-- <i class="fa fa-wifi theme-account-history-type-icon"></i> -->
                     </td>
                     <td>
-                      <p class="theme-account-history-type-title">192373626</p>
+                      <p class="theme-account-history-item-price" style="color: red;">$130.26</p>
                     </td>
                     <td>
-                      <p class="theme-account-history-type-title">12 B</p>
-                    </td>
-                    <td>
-                      <p class="theme-account-history-type-title">$620.00</p>
-                    </td>
-                    <td>
-                      <i class="fa fa-edit theme-account-history-type-icon"></i>
-                      <i href="" onclick="alert('You are about to remove Maxwell Abbot as a passenger from this flight. Proceed?')" class="fa fa-times theme-account-history-type-icon" style="color: red;"></i>
-                    </td>
-                    <td>
-                      <button class='btn btn-primary btn-xs'>Check-in</button>
-                    </td>
-                  </tr> -->
-                </tbody>
-              </table>
-            </div>
-
-            <!-- START SERVICES -->
-            <div class="theme-account-history" style="margin-top: 20px;">
-              <h4>Services</h4>
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>ID</th>
-                    <th>Passenger</th>
-                    <th>Service</th>
-                    <th>Service Desc.</th>
-                    <th>Price</th>
-                    <th>Actions</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <!-- <tr>
-                    <td class="theme-account-history-type">
-                      <p class="theme-account-history-type-title">0001</p>
-                    </td>
-                    <td>
-                      <p class="theme-account-history-type-title">Maxwell Abbot</p>
-                    </td>
-                    <td>
-                      <i class="fa fa-wifi theme-account-history-type-icon"></i>
-                    </td>
-                    <td class="theme-account-history-tr-date">
-                      <p class="theme-account-history-type-title">Wifi</p>
-                    </td>
-                    <td>
-                      <p class="theme-account-history-type-title">$20</p>
-                    </td>
-                    <td>
-                      <i class="fa fa-edit theme-account-history-type-icon"></i>
-                      <i class="fa fa-times theme-account-history-type-icon"></i>
-                    </td>
-                  </tr> -->
-                  <!-- <tr>
-                    <td class="theme-account-history-type">
-                      <p class="theme-account-history-type-title">0002</p>
-                    </td>
-                    <td>
-                      <p class="theme-account-history-type-title">Juliette Abbot</p>
-                    </td>
-                    <td>
-                      <i class="fa fa-wifi theme-account-history-type-icon"></i>
-                    </td>
-                    <td class="theme-account-history-tr-date">
-                      <p class="theme-account-history-type-title">Wifi</p>
-                    </td>
-                    <td>
-                      <p class="theme-account-history-type-title">$20</p>
-                    </td>
-                    <td>
-                      <i class="fa fa-edit theme-account-history-type-icon"></i>
-                      <i class="fa fa-times theme-account-history-type-icon"></i>
-                    </td>
-                  </tr> -->
-                 <!--  <tr>
-                    <td class="theme-account-history-type">
-                      <p class="theme-account-history-type-title">0003</p>
-                    </td>
-                    <td>
-                      <p class="theme-account-history-type-title">Maxwell Abbot</p>
-                    </td>
-                    <td>
-                      <i class="fa fa-search-plus theme-account-history-type-icon"></i>
-                    </td>
-                    <td class="theme-account-history-tr-date">
-                      <p class="theme-account-history-type-title">Seat Selection (Forward Zone)</p>
-                    </td>
-                    <td>
-                      <p class="theme-account-history-type-title">Free</p>
-                    </td>
-                    <td>
-                      <i class="fa fa-edit theme-account-history-type-icon"></i>
-                      <i class="fa fa-times theme-account-history-type-icon"></i>
-                    </td>
-                  </tr> -->
-                  <tr>
-                    <td class="theme-account-history-type">
-                      <p class="theme-account-history-type-title">0004</p>
-                    </td>
-                    <td>
-                      <p class="theme-account-history-type-title">Juliette Abbot</p>
-                    </td>
-                    <td>
-                      <i class="fa fa-search-plus theme-account-history-type-icon"></i>
-                    </td>
-                    <td class="theme-account-history-tr-date">
-                      <p class="theme-account-history-type-title">Seat Selection (Forward Zone)</p>
-                    </td>
-                    <td>
-                      <p class="theme-account-history-type-title">Free</p>
-                    </td>
-                    <td>
-                      <i class="fa fa-edit theme-account-history-type-icon"></i>
-                      <i class="fa fa-times theme-account-history-type-icon"></i>
-                    </td>
-                  </tr>
-
-                <!--   <tr>
-                    <td class="theme-account-history-type">
-                      <p class="theme-account-history-type-title">0005</p>
-                    </td>
-                    <td>
-                      <p class="theme-account-history-type-title">Maxwell Abbot</p>
-                    </td>
-                    <td>
-                      <i class="fa fa-suitcase theme-account-history-type-icon"></i>
-                    </td>
-                    <td class="theme-account-history-tr-date">
-                      <p class="theme-account-history-type-title">Baggage Allowance 30kg</p>
-                    </td>
-                    <td>
-                      <p class="theme-account-history-type-title">Free</p>
-                    </td>
-                    <td>
-                    </td>
-                  </tr>  -->
-                  <tr>
-                    <td class="theme-account-history-type">
-                      <p class="theme-account-history-type-title">0006</p>
-                    </td>
-                    <td>
-                      <p class="theme-account-history-type-title">Juliette Abbot</p>
-                    </td>
-                    <td>
-                      <i class="fa fa-suitcase theme-account-history-type-icon"></i>
-                    </td>
-                    <td class="theme-account-history-tr-date">
-                      <p class="theme-account-history-type-title">Baggage Allowance 30kg</p>
-                    </td>
-                    <td>
-                      <p class="theme-account-history-type-title">Free</p>
-                    </td>
-                    <td>
-                      <!-- <i class="fa fa-edit theme-account-history-type-icon"></i> -->
-                      <!-- <i class="fa fa-times theme-account-history-type-icon"></i> -->
-                    </td>
-                  </tr>
-<!--                   <tr>
-                    <td class="theme-account-history-type">
-                      <p class="theme-account-history-type-title">0007</p>
-                    </td>
-                    <td>
-                      <p class="theme-account-history-type-title">Maxwell Abbot</p>
-                    </td>
-                    <td>
-                      <i class="fa fa-coffee theme-account-history-type-icon"></i>
-                    </td>
-                    <td class="theme-account-history-tr-date">
-                      <p class="theme-account-history-type-title">Lounge Access</p>
-                    </td>
-                    <td>
-                      <p class="theme-account-history-type-title">Free (Loyalty)</p>
-                    </td>
-                    <td>
-                    </td>
-                  </tr> -->
-                  <tr>
-                    <td class="theme-account-history-type">
-                      <p class="theme-account-history-type-title">0008</p>
-                    </td>
-                    <td>
-                      <p class="theme-account-history-type-title">Juliette Abbot</p>
-                    </td>
-                    <td>
-                      <i class="fa fa-coffee theme-account-history-type-icon"></i>
-                    </td>
-                    <td class="theme-account-history-tr-date">
-                      <p class="theme-account-history-type-title">Lounge Access</p>
-                    </td>
-                    <td>
-                      <p class="theme-account-history-type-title">Free (Loyalty)</p>
-                    </td>
-                    <td>
-                      <!-- <i class="fa fa-edit theme-account-history-type-icon"></i> -->
-                      <!-- <i class="fa fa-times theme-account-history-type-icon"></i> -->
+                      <a href="3.3.3-Change Date - Date Selected.html" class="btn btn-primary">Select</a>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
+
+
+
           </div>
         </div>
       </div>
@@ -1482,18 +1323,18 @@
     <div class="theme-footer" id="mainFooter">
       <div class="container _ph-mob-0">
         <div class="row row-eq-height row-mob-full" data-gutter="60">
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="theme-footer-section theme-footer-">
               <a class="theme-footer-brand _mb-mob-30" href="#">
                 <img src="img/logo-black.png" alt="Image Alternative text" title="Image Title"/>
               </a>
               <div class="theme-footer-brand-text">
-                <p>Aptent augue faucibus class vulputate pretium ullamcorper penatibus per nisi erat vivamus feugiat dapibus a</p>
-                <p>Luctus elit magna neque mattis hac elit rhoncus luctus commodo nostra phasellus non taciti donec</p>
+                <p>Bookify is a travel and tourism booking management tool for travel agents.</p>
+                <p>It allows travel agents to manage individual and business customer accounts, book flights, hotels, car rentals and activities on behalf of these customers and allows travel agents to manage these bookings easily.</p>
               </div>
             </div>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-8">
             <div class="row">
               <div class="col-md-4">
                 <div class="theme-footer-section theme-footer-">
@@ -1581,7 +1422,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <!--           <div class="col-md-4">
             <div class="theme-footer-section theme-footer-section-subscribe bg-grad _mt-mob-30">
               <div class="theme-footer-section-subscribe-bg" style="background-image:url(img/footer/footer_subscribe_bg.png);"></div>
               <div class="theme-footer-section-subscribe-content">
@@ -1595,7 +1436,7 @@
                 </form>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

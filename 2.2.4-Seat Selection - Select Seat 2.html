@@ -1074,9 +1074,9 @@
           <div class="col-md-2-5 ">
             <div class="theme-account-sidebar">
               <div class="theme-account-avatar">
-                <img class="theme-account-avatar-img" src="./img/custom/myAvatar.png" alt="Image Alternative text" title="Image Title"/>
-                <p class="theme-account-avatar-name">Welcome,
-                  <br/>Juliette Abbot
+                <img class="theme-account-avatar-img" src="./img/custom/user-avatar.png"  alt="Image Alternative text" title="Image Title"/>
+                <p class="theme-account-avatar-name">Logged in as:
+                  <br/><i>Juliette Abbot</i>
                 </p>
               </div>
               <nav class="theme-account-nav">
@@ -1127,10 +1127,21 @@
             <!-- <h4>Select Seats</h4> -->
             <!-- <div class="theme-search-results-item theme-search-results-item- active"> -->
               <!-- <div class="theme-search-results-item-collapse collapse in" id="searchResultsItem-2" aria-expanded="true" style=""> -->
-                <img src="./img/custom/airplane-seat-map-cropped.jpg" alt="Smiley face" height="550" width="800">
-                <br/>
-                <br/>
-                <p><a href="3.1.1-Remove Passenger.html" class='btn btn-primary-inverse'>Save</a><p>
+                <img src="./img/custom/airplane-seat-map-cropped-no-legend-reference.jpg" alt="seat selection" height="360" width="900">
+                <div class="row" style="margin:10px;">
+                  <div class="col-md-4"><p><img src="./img/custom/seats/economy.png" alt="economy class seat" height="20" width="20"> Economy Class</p></div>
+                  <div class="col-md-4"><p><img src="./img/custom/seats/forward zone.png" alt="economy class seat" height="20" width="15"> Foward Zone (Economy)</p></div>
+                  <div class="col-md-4"><p><img src="./img/custom/seats/economy+legroom.png" alt="economy class seat" height="20" width="15"> Economy with extra legroom</p></div>
+                </div>
+                <div class="row" style="margin:10px;">
+                  <div class="col-md-4"><p><img src="./img/custom/seats/business.png" alt="economy class seat" height="20" width="15"> Business Class</p></div>
+                  <div class="col-md-4"><p><img src="./img/custom/seats/seat with movable armrest.png" alt="economy class seat" height="20" width="15"> Movable Armrest</p></div>
+                </div>
+                
+                
+                <!-- note ratio of the original image = 5:2 width:height -->
+                <!-- <p><a href="2.2.4-Seat Selection - Select Seat 2.html" class='btn btn-primary'>Next Passenger</a><p> -->
+                <p><a href="3.1.1-Change Date.html" class='btn btn-primary-inverse'>Save</a><p>
               <!-- </div> -->
             <!-- </div> -->
           </div>
@@ -1140,18 +1151,18 @@
     <div class="theme-footer" id="mainFooter">
       <div class="container _ph-mob-0">
         <div class="row row-eq-height row-mob-full" data-gutter="60">
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="theme-footer-section theme-footer-">
               <a class="theme-footer-brand _mb-mob-30" href="#">
                 <img src="img/logo-black.png" alt="Image Alternative text" title="Image Title"/>
               </a>
               <div class="theme-footer-brand-text">
-                <p>Aptent augue faucibus class vulputate pretium ullamcorper penatibus per nisi erat vivamus feugiat dapibus a</p>
-                <p>Luctus elit magna neque mattis hac elit rhoncus luctus commodo nostra phasellus non taciti donec</p>
+                <p>Bookify is a travel and tourism booking management tool for travel agents.</p>
+                <p>It allows travel agents to manage individual and business customer accounts, book flights, hotels, car rentals and activities on behalf of these customers and allows travel agents to manage these bookings easily.</p>
               </div>
             </div>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-8">
             <div class="row">
               <div class="col-md-4">
                 <div class="theme-footer-section theme-footer-">
@@ -1239,7 +1250,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <!--           <div class="col-md-4">
             <div class="theme-footer-section theme-footer-section-subscribe bg-grad _mt-mob-30">
               <div class="theme-footer-section-subscribe-bg" style="background-image:url(img/footer/footer_subscribe_bg.png);"></div>
               <div class="theme-footer-section-subscribe-content">
@@ -1253,7 +1264,7 @@
                 </form>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
